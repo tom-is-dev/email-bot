@@ -17,11 +17,6 @@ app.post("/webhook", async (req, res) => {
     console.log(id)
     const agent = new WebhookClient({ request: req, response: res });
 
-    // function hi(agent) {
-    //     console.log(`intent  =>  hi`);
-    //     agent.add('Welcome to ABC solutions. Do you want to make reservation?')
-    // }
-
     function confirmation(agent) {
         const { person , email } = agent.parameters;
        console.log(email)
