@@ -45,7 +45,7 @@ app.post("/webhook", async (req, res) => {
         console.log(info, response)
         response.send('email sent')
     })
-        agent.add(`Congratulations ${person}..! We book your reservation successfully at ${email}. Kindly check your email for verification.`)
+        agent.add(`Okay, I am forwarding your question to our manager. He will be in touch with you shortly. Thank you!`)
     }
 
     let intentMap = new Map();
