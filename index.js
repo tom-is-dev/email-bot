@@ -34,7 +34,7 @@ app.post("/webhook", async (req, res) => {
         from: "interneepk.pk@gmail.com", // sender address
         to: [email, "hammadn788@gmail.com" , "learndispatch.alfax@gmail.com"], // list of receivers
         subject: `APPOINTMENT BOOKING`, // Subject line
-        text: `Hi ${person.name} Congratulations...! Your reservation is done successfully ${email} Persons. See you There`
+        text: `Hi Congratulations...! Your reservation is done successfully ${email} Persons. See you There`
     };
     
     transporter.sendMail(options, function (err, info) {  
